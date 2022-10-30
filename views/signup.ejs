@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration System</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <style>
+     @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-image: url('/assets/background_png.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.center-div{
+    padding-top: 10%;
+}
+
+.btn.btn-success{
+    padding: .4em 2em;
+}
+
+form{
+    padding: 0 3em;
+}
+
+#login .title > span{
+    font-size: .8em;
+} 
+    </style>
+ </head>
+
+<body>
+  <div class="text-center center-div" id="login" style="background-image:url(https://img.freepik.com/free-photo/beautiful-sky-with-mountains-distance_1232-718.jpg?size=626&ext=jpg&ga=GA1.2.463646993.1667135790);background-repeat: no-repeat;background-size: cover;">
+    <h4 style="color: black; font-family: serif;"><b>Current Location Coordinates and Temperature Finding App</b></h4>
+    <br>
+    <div class="container w-26 border py-4" style="width: 500px;background-color:rgba(255, 255, 255, 0.641);border-radius: 15px;">
+      <h2 style="font-family:serif; color:black;">Registration Page</h2>
+        <form action="/signupsubmit" method="GET" class="pt-3">
+          <div class="form-group">
+          <input type="text" class="form-control" placeholder="First Name" name="firstname" id="firstname">
+        </div>
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Last Name" name="lastname" id="lastname">
+      </div>
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Email-ID" name="email" id="eml">
+    </div>
+    <div class="form-group">
+      <input type="text" class="form-control"name="password" placeholder="Password" id="pwd">
+  </div>
+  <button type="submit" class="btn btn-success rounded-pill">Submit</button>
+       </form><br>
+       <form action="/navsubmit" method="GET">
+        Already have an account?<br><br>
+        <button class="btn btn-primary" type="submit" >Login</button>
+    </form>
+     </div>  
+     <br><br> 
+    </div>
+    <br><br><br>
+    </body>
+    </html>
